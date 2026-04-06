@@ -1,6 +1,8 @@
-# LLM Wiki Skill for Claude Code
+# LLM Wiki Skill for Agent
 
 > **增量构建并维护你的个人知识库** — 知识持续复利，LLM 负责所有簿记工作。 Inspired by Andrej Karpathy's LLM Wiki pattern.
+
+遵循 [AgentSkills](https://agentskills.io/) 开放标准，可以在任何兼容的 Agent 客户端上使用。
 
 ## 特性
 
@@ -21,14 +23,24 @@
 
 ## 安装
 
-在 Claude Code 中，安装到全局：
+### Claude Code
+
+安装到全局：
 
 ```bash
 mkdir -p ~/.claude/skills
-git clone https://github.com/你的用户名/llm-wiki ~/.claude/skills/llm-wiki
+git clone https://github.com/meteor-ioi/llm-wiki ~/.claude/skills/llm-wiki
 ```
 
 然后重启 Claude Code 即可使用。
+
+### 其他 AgentSkills 兼容客户端
+
+如果你使用其他兼容 AgentSkills 标准的客户端，按照对应客户端的文档，将本仓库克隆到 skills 目录即可。
+
+通常的路径约定：
+- 全局技能目录：`~/.claude/skills/`
+- 每个技能一个子目录，入口文件是 `SKILL.md`
 
 ## 快速开始
 
