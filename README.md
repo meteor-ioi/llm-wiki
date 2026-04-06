@@ -13,14 +13,21 @@
 - 🧩 **模块化设计** - 易于扩展支持新文件类型
 - 📦 **纯 Markdown** - 兼容 Obsidian 等任何工具
 
+## 📚 文档
+
+- [**完全入门指南**](./docs/GETTING_STARTED.md) - 从零开始，详细讲解所有概念和用法
+- [**实战示例**](./docs/EXAMPLE.md) - 完整走一遍从 0 构建知识库的流程，一看就会
+
 ## 安装
 
 在 Claude Code 中，安装到全局：
 
 ```bash
 mkdir -p ~/.claude/skills
-git clone https://github.com/[your-repo]/llm-wiki ~/.claude/skills/llm-wiki
+git clone https://github.com/你的用户名/llm-wiki ~/.claude/skills/llm-wiki
 ```
+
+然后重启 Claude Code 即可使用。
 
 ## 快速开始
 
@@ -33,7 +40,7 @@ git clone https://github.com/[your-repo]/llm-wiki ~/.claude/skills/llm-wiki
 默认会创建在 `~/Documents/llm-wiki/default`。你也可以指定路径：
 
 ```
-/llm-wiki-init ~/Documents/my-knowledge-base "我的知识库"
+/llm-wiki init ~/Documents/my-knowledge-base "我的知识库"
 ```
 
 ### 2. 添加内容
@@ -68,7 +75,7 @@ git clone https://github.com/[your-repo]/llm-wiki ~/.claude/skills/llm-wiki
 
 检查健康问题，可以 `--fix` 自动修复。
 
-## 命令
+## 命令总览
 
 | 命令 | 功能 |
 |------|------|
@@ -106,6 +113,11 @@ Config:                 ~/.llm-wiki/config.json
 **分工：**
 - 你：提供源、提出好问题、引导方向
 - LLM：所有簿记工作（总结、交叉引用、更新索引、维护一致性）
+
+## 相关
+
+- [Andrej Karpathy's original LLM Wiki idea](https://github.com/karpathy/llm-wiki)
+- 遵循 [AgentSkills](https://agentskills.io/) 开放标准
 
 ## 许可证
 
