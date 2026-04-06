@@ -34,13 +34,51 @@ git clone https://github.com/meteor-ioi/llm-wiki ~/.claude/skills/llm-wiki
 
 然后重启 Claude Code 即可使用。
 
-### 其他 AgentSkills 兼容客户端
+### OpenCode
 
-如果你使用其他兼容 AgentSkills 标准的客户端，按照对应客户端的文档，将本仓库克隆到 skills 目录即可。
+**全局安装：**
+```bash
+mkdir -p ~/.config/opencode/skills
+git clone https://github.com/meteor-ioi/llm-wiki ~/.config/opencode/skills/llm-wiki
+```
 
-通常的路径约定：
-- 全局技能目录：`~/.claude/skills/`
-- 每个技能一个子目录，入口文件是 `SKILL.md`
+**项目内安装：**
+```bash
+mkdir -p .opencode/skills
+git clone https://github.com/meteor-ioi/llm-wiki .opencode/skills/llm-wiki
+```
+
+OpenCode 会自动发现技能。
+
+### Cursor
+
+参见 [Cursor 官方文档](https://cursor.com/docs/context/skills)，按照界面提示添加技能即可。
+
+### Gemini CLI
+
+Gemini CLI 支持 AgentSkills，安装到：
+
+```bash
+mkdir -p ~/.gemini/skills
+git clone https://github.com/meteor-ioi/llm-wiki ~/.gemini/skills/llm-wiki
+```
+
+参见 [Gemini CLI 文档](https://geminicli.com/docs/cli/skills/) 详情。
+
+### 其他兼容客户端
+
+本技能遵循 [AgentSkills](https://agentskills.io/) 开放标准，可在任何兼容客户端使用。找到你的客户端的全局技能目录，克隆进去即可：
+
+| 客户端 | 默认全局技能路径 |
+|--------|-----------------|
+| Claude Code | `~/.claude/skills/` |
+| OpenCode | `~/.config/opencode/skills/` |
+| Gemini CLI | `~/.gemini/skills/` |
+| Autohand Code CLI | `~/.autohand/skills/` |
+| Roo Code | 参见 [Roo Code 文档](https://docs.roocode.com/features/skills) |
+| Goose | 参见 [Goose 文档](https://block.github.io/goose/docs/guides/context-engineering/using-skills/) |
+
+> 每个技能一个子目录，入口文件是 `SKILL.md`，客户端会自动发现。
 
 ## 快速开始
 
