@@ -1,0 +1,5 @@
+# Python dependencies for LLM Wiki Skill tools
+# 这些依赖只在技能工具需要时安装，用户数据不需要
+
+# 目前只有标准库，不需要额外依赖
+# 如需扩展功能可以在这里添加
